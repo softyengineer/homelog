@@ -1,9 +1,21 @@
 :root {
-  --main-bright-colour: rgb(170, 255, 244);
-  --main-background-colour: rgb(85, 52, 4);
+  --main-bright-colour: rgb(122, 255, 237);
+  --main-background-colour: rgb(109, 68, 6);
   --main-container-colour: rgb(200, 230, 203);
-  --main-colour-b-green: rgb(31, 212, 46);
+  --main-colour-b-green: rgb(74, 204, 85);
   --global-font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.title {
+  margin: 0 0 0.5em;
+  font-weight: 900;
+  font-style: italic;
+  font-size: calc(5vw + 1rem);
+  line-height: 0.8;
+}
+
+#content {
+  color: var(--main-bright-colour);
 }
 
 body {
@@ -13,11 +25,13 @@ body {
   min-height: 100vh;
   font-size: 1.125em;
   line-height: 1.1;
+  //hide scroll-bar
+  overflow-x: hidden;
 }
 
 #container {
   max-width: 1000px;
-  width: calc(100vw - 6em);
+  width: calc(100vw - 3em);
   margin: 0 auto;
 }
 #top {
@@ -40,6 +54,7 @@ img {
 //lists
 ul {
   background-color: var(--main-colour-b-green);
+  color: var(--main-background-colour);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -47,17 +62,27 @@ ul {
 }
 li {
   float: left;
+  border-right: 1px solid var(--main-background-colour);
 }
+
 li a {
   display: block; //whole area is clickable
   color: var(--main-background-colour);
-  text-align: center;
   padding: 10px 16px;
   text-decoration: none;
 }
 li a:hover:not(active) {
   background-color: var(--main-bright-colour);
 }
+
+.blank {
+  background-color: var(--main-colour-b-green) !important;
+  color: var(--main-bright-colour);
+  border-right: none;
+  cursor: default;
+  font-style: italic;
+}
+
 .active {
   background-color: var(--main-bright-colour);
 }
@@ -67,7 +92,7 @@ footer {
   margin: 2.5vw;
 }
 
-//global font family
+//global font families
 p {
   font-family: var(--global-font-family);
 }
@@ -83,7 +108,6 @@ h3 {
 ul {
   font-family: var(--global-font-family);
 }
-
-#js_page_title {
-  color: var(--main-bright-colour);
+body {
+  font-family: var(--global-font-family);
 }

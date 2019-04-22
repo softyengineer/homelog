@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <script src="./js/main.js"></script>
   </head>
 
-  <body>
+  <body onload="fillGeneric()">
     <div id="container">
-      <h3 id="js_page_title">Renovator's logbook</h3>
-
       <div id="top">
         <ul>
           <li><a class="active" href="./index.html">Home</a></li>
           <li><a href="./photos.html">Photos</a></li>
           <li><a href="./diary.html">Diary</a></li>
+          <li style="float:right">
+            <a id="js_title" class="blank"></a>
+          </li>
         </ul>
       </div>
 
@@ -26,6 +26,12 @@
       <!--        <div id="header_main" class="container_wrap">-->
 
       <div id="content">
+        <h3>Intro</h3>
+        <p id="intro">
+          The site title reflects the level of competence employed in both the
+          house renovation and the logbook. Work on the logbook started circa 6
+          months after the DIY, gaps in progress will appear.
+        </p>
         <img
           class="big-image"
           id
@@ -41,5 +47,6 @@
       /Website built using VSCode (extensions: Live Sass Compiler, Live Server,
       Auto Rename Tag)
     </p>
+    <script src="./js/main.js"></script>
   </footer>
 </html>

@@ -1,5 +1,5 @@
-// function fillGeneric() {
-//   textbox = document.getElementById("js_page_title");
-//   txt = document.createTextNode("Renovator's logbook - " + document.title);
-//   textbox.appendChild(txt);
-// }
+function fillGeneric() {
+  textbox = document.getElementById("js_title");
+  txt = document.createTextNode("A DIY renovation logbook");
+  textbox.appendChild(txt);
+}
