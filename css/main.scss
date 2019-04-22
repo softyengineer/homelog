@@ -1,32 +1,38 @@
 :root {
-  --main-bright-colour: rgb(170, 255, 255);
+  --main-bright-colour: rgb(170, 255, 244);
+  --main-background-colour: rgb(85, 52, 4);
+  --main-colour-b-green: rgb(31, 212, 46);
   --global-font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
-}
-
-//global font family
-p {
-  font-family: var(--global-font-family);
-}
-h1 {
-  font-family: var(--global-font-family);
-}
-h2 {
-  font-family: var(--global-font-family);
-}
-h3 {
-  font-family: var(--global-font-family);
 }
 
 //lists
 ul {
+  background-color: var(--main-colour-b-green);
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block; //whole area is clickable
+  color: var(--main-background-colour);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(active) {
+  background-color: var(--main-bright-colour);
+}
+.active {
+  font-weight: bold;
 }
 
 body {
   font-family: "Bookman", Courier, Arial;
-  background-color: rgb(0, 53, 66);
+  background-color: var(--main-background-colour);
   //https://www.youtube.com/watch?v=PKVKwluRTfo
   min-height: 100vh;
   font-size: 1.125em;
@@ -59,4 +65,21 @@ img {
 footer {
   color: var(--main-bright-colour);
   margin: 2.5vw;
+}
+
+//global font family
+p {
+  font-family: var(--global-font-family);
+}
+h1 {
+  font-family: var(--global-font-family);
+}
+h2 {
+  font-family: var(--global-font-family);
+}
+h3 {
+  font-family: var(--global-font-family);
+}
+ul {
+  font-family: var(--global-font-family);
 }
