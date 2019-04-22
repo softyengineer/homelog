@@ -1,0 +1,62 @@
+:root {
+  --main-bright-colour: rgb(170, 255, 255);
+  --global-font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: var(--global-font-family);
+}
+
+h1 {
+  font-family: var(--global-font-family);
+}
+
+h2 {
+  font-family: var(--global-font-family);
+}
+
+h3 {
+  font-family: var(--global-font-family);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bookman", Courier, Arial;
+  background-color: #003542;
+  min-height: 100vh;
+  font-size: 1.125em;
+  line-height: 1.1;
+  margin: 3vh;
+}
+
+#js_page_title {
+  color: var(--main-bright-colour);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container_wrap {
+  clear: both;
+  position: relative;
+  color: #9b9b9b;
+}
+
+.container {
+  width: calc(70vw+30%);
+  color: #dadada;
+  border: 5vw;
+}
+
+footer {
+  color: var(--main-bright-colour);
+  margin: 2.5vw;
+}
+/*# sourceMappingURL=main.css.map */
