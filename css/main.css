@@ -1,7 +1,6 @@
 :root {
-  --main-bright-colour: rgb(122, 255, 237);
-  --main-background-colour: rgb(109, 68, 6);
-  --main-container-colour: rgb(200, 230, 203);
+  --main-colour-bright: rgb(122, 255, 237);
+  --main-colour-background: rgb(109, 68, 6);
   --main-colour-b-green: rgb(74, 204, 85);
   --global-font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
 }
@@ -15,12 +14,12 @@
 }
 
 #content {
-  color: var(--main-bright-colour);
+  color: var(--main-colour-bright);
 }
 
 body {
   font-family: "Bookman", Courier, Arial;
-  background-color: var(--main-background-colour);
+  background-color: var(--main-colour-background);
   min-height: 100vh;
   font-size: 1.125em;
   line-height: 1.1;
@@ -48,12 +47,12 @@ img {
   margin: 0 calc(-50vw + 50%);
   max-height: 80vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 ul {
   background-color: var(--main-colour-b-green);
-  color: var(--main-background-colour);
+  color: var(--main-colour-background);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -62,34 +61,34 @@ ul {
 
 li {
   float: left;
-  border-right: 1px solid var(--main-background-colour);
+  border-right: 1px solid var(--main-colour-background);
 }
 
 li a {
   display: block;
-  color: var(--main-background-colour);
+  color: var(--main-colour-background);
   padding: 10px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(active) {
-  background-color: var(--main-bright-colour);
+  background-color: var(--main-colour-bright);
 }
 
 .blank {
   background-color: var(--main-colour-b-green) !important;
-  color: var(--main-bright-colour);
+  color: var(--main-colour-bright);
   border-right: none;
   cursor: default;
   font-style: italic;
 }
 
 .active {
-  background-color: var(--main-bright-colour);
+  background-color: var(--main-colour-bright);
 }
 
 footer {
-  color: var(--main-bright-colour);
+  color: var(--main-colour-bright);
   margin: 2.5vw;
 }
 
