@@ -5,6 +5,21 @@
   --global-font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
 }
 
+body {
+  font-family: "Bookman", Courier, Arial;
+  background-color: var(--main-background-colour);
+  //https://www.youtube.com/watch?v=PKVKwluRTfo
+  min-height: 100vh;
+  font-size: 1.125em;
+  line-height: 1.1;
+  margin: 2vw;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 //lists
 ul {
   background-color: var(--main-colour-b-green);
@@ -20,46 +35,14 @@ li a {
   display: block; //whole area is clickable
   color: var(--main-background-colour);
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
 }
 li a:hover:not(active) {
   background-color: var(--main-bright-colour);
 }
 .active {
-  font-weight: bold;
-}
-
-body {
-  font-family: "Bookman", Courier, Arial;
-  background-color: var(--main-background-colour);
-  //https://www.youtube.com/watch?v=PKVKwluRTfo
-  min-height: 100vh;
-  font-size: 1.125em;
-  line-height: 1.1;
-  margin: 3vh;
-}
-
-#js_page_title {
-  color: var(--main-bright-colour);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.container_wrap {
-  clear: both;
-  position: relative;
-
-  color: rgb(155, 155, 155);
-}
-
-.container {
-  width: calc(70vw+30%);
-  color: rgb(218, 218, 218);
-  border: 5vw;
+  background-color: var(--main-bright-colour);
 }
 
 footer {
@@ -82,4 +65,8 @@ h3 {
 }
 ul {
   font-family: var(--global-font-family);
+}
+
+#js_page_title {
+  color: var(--main-bright-colour);
 }
