@@ -15,10 +15,14 @@ function fillFooter2() {
   txt = document.createTextNode("Buy Bitcoin from LocalBitcoins");
   textbox.appendChild(txt);
 }
-function arrangePhotos() {
+function arrangePhotos(inputint) {
   var elements = document.getElementsByClassName("column");
+  var cols = parseInt(inputint);
   var i;
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "50%";
+  var iOut;
+  for (iOut = 0; iOut < elements.length; iOut++) {
+    for (i = 0; i < cols / cols; i++) {
+      elements[iOut + i * elements.length].style.flex = 100 / cols + "%";
+    }
   }
 }

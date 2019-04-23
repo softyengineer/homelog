@@ -74,13 +74,6 @@ img {
      object-fit: cover;
 }
 
-.reg-image {
-  max-width: 80%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 80vw;
-}
-
 ul {
   background-color: var(--main-colour-b-green);
   color: var(--main-colour-background);
@@ -117,8 +110,9 @@ li a:hover:not(active) {
   border-right: none;
   cursor: default;
   font-style: italic;
-  font-size: 0.75em;
-  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 10px 12px;
 }
 
 .active {
