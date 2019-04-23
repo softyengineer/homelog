@@ -1,9 +1,11 @@
 :root {
-  --main-colour-bright: rgb(122, 255, 237);
-  --main-colour-background: rgb(109, 68, 6);
-  --main-container-colour: rgb(200, 230, 203);
+  --main-colour-bright: rgb(41, 255, 226);
+  --main-colour-dark-bright: rgb(64, 165, 72);
+  --main-colour-background: rgb(255, 255, 255);
+  --main-colour-brown: rgb(109, 68, 6);
   --main-colour-b-green: rgb(74, 204, 85);
-  --global-font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+  --main-colour-font: rgb(0, 0, 0);
+  --global-font-family: Open Sans, Arial, Helvetica;
 }
 
 .title {
@@ -15,27 +17,40 @@
 }
 
 #content {
-  color: var(--main-colour-bright);
+  color: var(--main-colour-font);
 }
 
 body {
-  font-family: "Bookman", Courier, Arial;
+  font-family: var(--global-font-family);
   background-color: var(--main-colour-background);
   //https://www.youtube.com/watch?v=PKVKwluRTfo
   min-height: 100vh;
   font-size: 1.125em;
   line-height: 1.1;
-  //hide scroll-bar
-  overflow-x: hidden;
+  overflow-x: hidden; //hide scroll-bar
 }
 
 #container {
   max-width: 1000px;
-  width: calc(100vw - 3em);
-  margin: 0 auto;
+  margin: auto;
 }
 #top {
-  padding: 0.5em;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 img {
@@ -51,6 +66,12 @@ img {
   object-fit: cover;
 }
 
+.reg-image {
+  max-width: 80%;
+  align-content: center;
+  width: 80vw;
+}
+
 //lists
 ul {
   background-color: var(--main-colour-b-green);
@@ -59,6 +80,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-size: 1.2em;
 }
 li {
   float: left;
@@ -67,20 +89,25 @@ li {
 
 li a {
   display: block; //whole area is clickable
-  color: var(--main-colour-background);
+  color: var(--main-colour-font);
   padding: 10px 16px;
   text-decoration: none;
 }
 li a:hover:not(active) {
-  background-color: var(--main-colour-bright);
+  background-color: var(--main-colour-dark-bright);
+}
+.active {
+  background-color: var(--main-colour-bright) !important;
 }
 
 .blank {
   background-color: var(--main-colour-b-green) !important;
-  color: var(--main-colour-bright);
+  color: var(--main-colour-font);
   border-right: none;
   cursor: default;
   font-style: italic;
+  font-size: 0.75em;
+  padding: 12px 16px;
 }
 
 .active {
@@ -88,8 +115,7 @@ li a:hover:not(active) {
 }
 
 footer {
-  color: var(--main-colour-bright);
-  margin: 2.5vw;
+  color: var(--main-colour-font);
 }
 
 //global font families
@@ -109,5 +135,8 @@ ul {
   font-family: var(--global-font-family);
 }
 body {
+  font-family: var(--global-font-family);
+}
+footer {
   font-family: var(--global-font-family);
 }

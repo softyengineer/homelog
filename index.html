@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans"
+    />
   </head>
 
   <body onload="fillGeneric()">
@@ -16,7 +21,7 @@
           <li><a href="./photos.html">Photos</a></li>
           <li><a href="./diary.html">Diary</a></li>
           <li style="float:right">
-            <a id="js_title" class="blank"></a>
+            <a id="js_title" class="blank" href="./info.html"></a>
           </li>
         </ul>
       </div>
@@ -27,26 +32,64 @@
 
       <div id="content">
         <h3>Intro</h3>
-        <p id="intro">
-          The site title reflects the level of competence employed in both the
-          house renovation and the logbook. Work on the logbook started circa 6
-          months after the DIY, gaps in progress will appear.
+        <p>
+          Randomly executed and poorly documented trial and error.
         </p>
-        <img
-          class="big-image"
-          id
-          src="\images\photos\DSC00468.JPG"
-          alt="Picture cannot be found."
-        />
+
+        <p>
+          Below shows the front of the house being renovated, hopefully
+          preserving and occasionally improving the current state.
+        </p>
+        <button onclick="arrangePhotos()">-=-</button>
+        <textarea name="columns" id="" cols="5" rows="1"></textarea>
+        <div class="row">
+          <div class="column">
+            <img src="\images\photos\DSC00468.JPG" />
+            <img src="\images\photos\DSC00500.JPG" />
+            <img src="\images\photos\DSC00502.JPG" />
+            <img src="\images\photos\DSC00503.JPG" />
+            <img src="\images\photos\DSC00504.JPG" />
+            <img src="\images\photos\DSC00505.JPG" />
+          </div>
+          <div class="column">
+            <img src="\images\photos\DSC00506.JPG" />
+            <img src="\images\photos\DSC00507.JPG" />
+            <img src="\images\photos\DSC00512.JPG" />
+            <img src="\images\photos\DSC00515.JPG" />
+            <img src="\images\photos\DSC00532.JPG" />
+            <img src="\images\photos\DSC00534.JPG" />
+          </div>
+          <div class="column">
+            <img src="\images\photos\DSC00468.JPG" />
+            <img src="\images\photos\DSC00500.JPG" />
+            <img src="\images\photos\DSC00502.JPG" />
+            <img src="\images\photos\DSC00503.JPG" />
+            <img src="\images\photos\DSC00504.JPG" />
+            <img src="\images\photos\DSC00505.JPG" />
+          </div>
+          <div class="column">
+            <img src="\images\photos\DSC00506.JPG" />
+            <img src="\images\photos\DSC00507.JPG" />
+            <img src="\images\photos\DSC00512.JPG" />
+            <img src="\images\photos\DSC00515.JPG" />
+            <img src="\images\photos\DSC00532.JPG" />
+            <img src="\images\photos\DSC00534.JPG" />
+          </div>
+        </div>
+
+        <p>
+          This house was bought in 2018 by a first-time buyer.
+        </p>
+        <p>Freedom from rent. Freedom to experiment.</p>
       </div>
     </div>
   </body>
 
   <footer>
-    <p>
-      /Website built using VSCode (extensions: Live Sass Compiler, Live Server,
-      Auto Rename Tag)
-    </p>
+    <a
+      id="js_footer"
+      href="https://github.com/bisq-network/bisq/releases/tag/v0.3.6"
+    ></a>
     <script src="./js/main.js"></script>
   </footer>
 </html>
