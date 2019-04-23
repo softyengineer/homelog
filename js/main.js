@@ -18,11 +18,13 @@ function fillFooter2() {
 function arrangePhotos(inputint) {
   var elements = document.getElementsByClassName("column");
   var cols = parseInt(inputint);
-  var i;
-  var iOut;
-  for (iOut = 0; iOut < elements.length; iOut++) {
-    for (i = 0; i < cols / cols; i++) {
-      elements[iOut + i * elements.length].style.flex = 100 / cols + "%";
+  var columns;
+  var rows;
+  var perColumn = 10;
+
+  for (columns = 0; columns < cols; columns++) {
+    for (rows = 0; rows < elements.length; rows++) {
+      elements[columns * elements.length + rows].style.flex = 100 / cols + "%";
     }
   }
 }
