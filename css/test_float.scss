@@ -1,0 +1,51 @@
+.nav {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  list-style-type: none;
+  display: inline;
+  padding: 11px;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.index.current ~ hr,
+ul li.home:hover ~ hr {
+  margin-left: 0%;
+}
+
+.photos.active ~ hr,
+li.about:hover ~ hr {
+  margin-left: 25%;
+}
+
+.diary.current ~ hr,
+li.portfolio:hover ~ hr {
+  margin-left: 50%;
+}
+
+.blank.current ~ hr,
+li.contact:hover ~ hr {
+  margin-left: 75%;
+}
+
+hr {
+  height: 3px;
+  width: 25%;
+  margin: 0;
+  background-color: rgba(52, 152, 219, 0.3);
+  transition-property: transform;
+  transition: 0.3s ease-in-out;
+}

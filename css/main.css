@@ -1,6 +1,6 @@
 :root {
   --main-colour-bright: rgb(41, 255, 226);
-  --main-colour-dark-bright: rgb(112, 155, 114);
+  --main-colour-dark-bright: rgb(41, 255, 226);
   --main-colour-background: rgb(255, 255, 255);
   --main-colour-brown: rgb(109, 68, 6);
   --main-colour-b-green: rgb(74, 204, 85);
@@ -74,30 +74,55 @@ img {
      object-fit: cover;
 }
 
-ul {
-  background-color: var(--main-colour-b-green);
-  color: var(--main-colour-background);
+.nav {
+  width: 50%;
+  font-family: var(--global-font-family);
+  margin: 0 auto;
   list-style-type: none;
+  display: inline;
+}
+
+ul li {
+  display: inline;
+  background-color: var(--main-colour-b-green);
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-size: 1.2em;
 }
 
-li {
-  float: left;
-  border-right: 1px solid var(--main-colour-background);
+a {
+  display: inline-block;
+  width: 15%;
+  margin: 0;
+  text-decoration: none;
+  color: black;
 }
 
 li a {
-  display: block;
+  display: inline-block;
   color: var(--main-colour-font);
   padding: 10px 16px;
-  text-decoration: none;
+  margin: 0;
 }
 
-li a:hover:not(active) {
-  background-color: var(--main-colour-dark-bright);
+.index.active ~ hr,
+ul li.index.active:hover ~ hr {
+  margin-left: 0%;
+}
+
+.photos.active ~ hr,
+li.photos.active:hover ~ hr {
+  margin-left: 33%;
+}
+
+.diary.active ~ hr,
+li.portfolio:hover ~ hr {
+  margin-left: 50%;
+}
+
+.blank.current ~ hr,
+li.contact:hover ~ hr {
+  margin-left: 75%;
 }
 
 .active {
@@ -105,7 +130,7 @@ li a:hover:not(active) {
 }
 
 .blank {
-  background-color: var(--main-colour-b-green) !important;
+  background-color: transparent !important;
   color: var(--main-colour-font);
   border-right: none;
   cursor: default;
@@ -115,8 +140,18 @@ li a:hover:not(active) {
   padding: 10px 12px;
 }
 
-.active {
+hr {
+  height: 10px;
+  width: 20%;
   background-color: var(--main-colour-bright);
+  border: 0;
+  margin: 0;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 footer {
@@ -124,6 +159,10 @@ footer {
 }
 
 p {
+  font-family: var(--global-font-family);
+}
+
+header {
   font-family: var(--global-font-family);
 }
 

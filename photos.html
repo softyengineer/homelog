@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    
     <link
       rel="stylesheet"
       type="text/css"
@@ -14,17 +16,41 @@
   </head>
 
   <body onload="fillGeneric()">
-    <div id="container">
-      <div id="top">
+<div id="container">
+   <!--      <div id="top">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a class="active" href="./photos.html">Photos</a></li>
-          <li><a href="./diary.html">Diary</a></li>
+          <li class="index">
+            <a href="./index.html">Home</a>
+          </li>
+
+          <li class="photos active">
+            <a href="./photos.html">Photos</a>
+          </li>
+
+
+          <li class="diary">
+            <a href="./diary.html">Diary</a>
+          </li>
           <li style="float:right">
             <a id="js_title" class="blank" href="./info.html"></a>
           </li>
+          <hr /> 
         </ul>
-      </div>
+      </div>  -->
+      <header id="header">
+        <div class="nav">
+          <ul>
+            <li class="index"><a href="./index.html">Home</a></li>
+
+            <li class="photos"><a href="./photos.html">Photos</a></li>
+
+            <li class="diary"><a href="./diary.html">Diary</a></li>
+
+            <li class="blank" id="js_title"  href="./info.html"></a></li>
+            <hr />
+          </ul>
+        </div>
+      </header>
 
       <div id="leftnav"></div>
 
@@ -38,71 +64,168 @@
           <button onclick="arrangePhotos(2)">>2<</button>
           <button onclick="arrangePhotos(3)">-3-</button>
           <button onclick="arrangePhotos(4)">--4--</button>
+          <button onclick="arrangePhotos(5)">- 5 -</button>
         </p>
         <div class="row">
           <div class="column">
-            <img class="grid" src="\images\photos\DSC00058.JPG" />
-            <img src="\images\photos\DSC00468.jpg" />
-            <img src="\images\photos\DSC00500.jpg" />
-            <img src="\images\photos\DSC00502.jpg" />
-            <img src="\images\photos\DSC00503.jpg" />
-            <img src="\images\photos\DSC00504.jpg" />
-            <img src="\images\photos\DSC00505.jpg" />
-            <img src="\images\photos\DSC00506.jpg" />
-            <img src="\images\photos\DSC00507.jpg" />
-            <img src="\images\photos\DSC00512.jpg" />
+            <a href="\images\originals\DSC00058.JPG"
+              ><img src="\images\photos\DSC00058.JPG" style="width:100%"
+            /></a>
+            <a href="\images\originals\DSC00468.jpg"
+              ><img src="\images\photos\DSC00468.jpg"
+            /></a>
+            <a href="\images\originals\DSC00500.jpg"
+              ><img src="\images\photos\DSC00500.jpg"
+            /></a>
+            <a href="\images\originals\DSC00502.jpg"
+              ><img src="\images\photos\DSC00502.jpg"
+            /></a>
+            <a href="\images\originals\DSC00503.jpg"
+              ><img src="\images\photos\DSC00503.jpg"
+            /></a>
+            <a href="\images\originals\DSC00504.jpg"
+              ><img src="\images\photos\DSC00504.jpg"
+            /></a>
+            <a href="\images\originals\DSC00505.jpg"
+              ><img src="\images\photos\DSC00505.jpg"
+            /></a>
+            <a href="\images\originals\DSC00506.jpg"
+              ><img src="\images\photos\DSC00506.jpg"
+            /></a>
+            <a href="\images\originals\DSC00507.jpg"
+              ><img src="\images\photos\DSC00507.jpg"
+            /></a>
+            <a href="\images\originals\DSC00512.jpg"
+              ><img src="\images\photos\DSC00512.jpg"
+            /></a>
           </div>
-
           <div class="column">
-            <img src="\images\photos\DSC00515.jpg" />
-            <img src="\images\photos\DSC00532.jpg" />
-            <img src="\images\photos\DSC00534.jpg" />
-            <img src="\images\photos\DSC00535.jpg" />
-            <img src="\images\photos\DSC00540.jpg" />
-            <img src="\images\photos\DSC00548.jpg" />
-            <img src="\images\photos\DSC00551.jpg" />
-            <img src="\images\photos\DSC00556.jpg" />
-            <img src="\images\photos\DSC00558.jpg" />
-            <img src="\images\photos\DSC00565.jpg" />
+            <a href="\images\originals\DSC00515.jpg"
+              ><img src="\images\photos\DSC00515.jpg"
+            /></a>
+            <a href="\images\originals\DSC00532.jpg"
+              ><img src="\images\photos\DSC00532.jpg"
+            /></a>
+            <a href="\images\originals\DSC00534.jpg"
+              ><img src="\images\photos\DSC00534.jpg"
+            /></a>
+            <a href="\images\originals\DSC00535.jpg"
+              ><img src="\images\photos\DSC00535.jpg"
+            /></a>
+            <a href="\images\originals\DSC00540.jpg"
+              ><img src="\images\photos\DSC00540.jpg"
+            /></a>
+            <a href="\images\originals\DSC00548.jpg"
+              ><img src="\images\photos\DSC00548.jpg"
+            /></a>
+            <a href="\images\originals\DSC00551.jpg"
+              ><img src="\images\photos\DSC00551.jpg"
+            /></a>
+            <a href="\images\originals\DSC00556.jpg"
+              ><img src="\images\photos\DSC00556.jpg"
+            /></a>
+            <a href="\images\originals\DSC00558.jpg"
+              ><img src="\images\photos\DSC00558.jpg"
+            /></a>
+            <a href="\images\originals\DSC00565.jpg"
+              ><img src="\images\photos\DSC00565.jpg"
+            /></a>
           </div>
-
           <div class="column">
-            <img src="\images\photos\DSC00567.jpg" />
-            <img src="\images\photos\DSC01027.jpg" />
-            <img src="\images\photos\DSC01030.jpg" />
-            <img src="\images\photos\DSC01032.jpg" />
-            <img src="\images\photos\DSC01034.jpg" />
-            <img src="\images\photos\DSC01035.jpg" />
-            <img src="\images\photos\DSC01037.jpg" />
-            <img src="\images\photos\DSC01039.jpg" />
-            <img src="\images\photos\DSC01040.jpg" />
-            <img src="\images\photos\DSC01041.jpg" />
+            <a href="\images\originals\DSC00567.jpg"
+              ><img src="\images\photos\DSC00567.jpg"
+            /></a>
+            <a href="\images\originals\DSC01027.jpg"
+              ><img src="\images\photos\DSC01027.jpg"
+            /></a>
+            <a href="\images\originals\DSC01030.jpg"
+              ><img src="\images\photos\DSC01030.jpg"
+            /></a>
+            <a href="\images\originals\DSC01032.jpg"
+              ><img src="\images\photos\DSC01032.jpg"
+            /></a>
+            <a href="\images\originals\DSC01034.jpg"
+              ><img src="\images\photos\DSC01034.jpg"
+            /></a>
+            <a href="\images\originals\DSC01035.jpg"
+              ><img src="\images\photos\DSC01035.jpg"
+            /></a>
+            <a href="\images\originals\DSC01037.jpg"
+              ><img src="\images\photos\DSC01037.jpg"
+            /></a>
+            <a href="\images\originals\DSC01039.jpg"
+              ><img src="\images\photos\DSC01039.jpg"
+            /></a>
+            <a href="\images\originals\DSC01040.jpg"
+              ><img src="\images\photos\DSC01040.jpg"
+            /></a>
+            <a href="\images\originals\DSC01041.jpg"
+              ><img src="\images\photos\DSC01041.jpg"
+            /></a>
           </div>
-
           <div class="column">
-            <img src="\images\photos\DSC01042.jpg" />
-            <img src="\images\photos\DSC01043.jpg" />
-            <img src="\images\photos\DSC01044.jpg" />
-            <img src="\images\photos\DSC01045.jpg" />
-            <img src="\images\photos\DSC01046.jpg" />
-            <img src="\images\photos\DSC01047.jpg" />
-            <img src="\images\photos\DSC01048.jpg" />
-            <img src="\images\photos\DSC01050.jpg" />
-            <img src="\images\photos\DSC01051.jpg" />
-            <img src="\images\photos\DSC01052.jpg" />
+            <a href="\images\originals\DSC01042.jpg"
+              ><img src="\images\photos\DSC01042.jpg"
+            /></a>
+            <a href="\images\originals\DSC01043.jpg"
+              ><img src="\images\photos\DSC01043.jpg"
+            /></a>
+            <a href="\images\originals\DSC01044.jpg"
+              ><img src="\images\photos\DSC01044.jpg"
+            /></a>
+            <a href="\images\originals\DSC01045.jpg"
+              ><img src="\images\photos\DSC01045.jpg"
+            /></a>
+            <a href="\images\originals\DSC01046.jpg"
+              ><img src="\images\photos\DSC01046.jpg"
+            /></a>
+            <a href="\images\originals\DSC01047.jpg"
+              ><img src="\images\photos\DSC01047.jpg"
+            /></a>
+            <a href="\images\originals\DSC01048.jpg"
+              ><img src="\images\photos\DSC01048.jpg"
+            /></a>
+            <a href="\images\originals\DSC01050.jpg"
+              ><img src="\images\photos\DSC01050.jpg"
+            /></a>
+            <a href="\images\originals\DSC01051.jpg"
+              ><img src="\images\photos\DSC01051.jpg"
+            /></a>
+            <a href="\images\originals\DSC01052.jpg"
+              ><img src="\images\photos\DSC01052.jpg"
+            /></a>
           </div>
-
           <div class="column">
-            <img src="\images\photos\DSC01053.jpg" />
-            <img src="\images\photos\DSC01088.jpg" />
-            <img src="\images\photos\DSC01091.jpg" />
-            <img src="\images\photos\DSC01093.jpg" />
-            <img src="\images\photos\DSC01112.jpg" />
-            <img src="\images\photos\DSC01113.jpg" />
-            <img src="\images\photos\DSC01114.jpg" />
-            <img src="\images\photos\DSC01115.jpg" />
-            <img src="\images\photos\DSC01116.jpg" />
-            <img src="\images\photos\DSC01117.jpg" />
+            <a href="\images\originals\DSC01053.jpg"
+              ><img src="\images\photos\DSC01053.jpg"
+            /></a>
+            <a href="\images\originals\DSC01088.jpg"
+              ><img src="\images\photos\DSC01088.jpg"
+            /></a>
+            <a href="\images\originals\DSC01091.jpg"
+              ><img src="\images\photos\DSC01091.jpg"
+            /></a>
+            <a href="\images\originals\DSC01093.jpg"
+              ><img src="\images\photos\DSC01093.jpg"
+            /></a>
+            <a href="\images\originals\DSC01112.jpg"
+              ><img src="\images\photos\DSC01112.jpg"
+            /></a>
+            <a href="\images\originals\DSC01113.jpg"
+              ><img src="\images\photos\DSC01113.jpg"
+            /></a>
+            <a href="\images\originals\DSC01114.jpg"
+              ><img src="\images\photos\DSC01114.jpg"
+            /></a>
+            <a href="\images\originals\DSC01115.jpg"
+              ><img src="\images\photos\DSC01115.jpg"
+            /></a>
+            <a href="\images\originals\DSC01116.jpg"
+              ><img src="\images\photos\DSC01116.jpg"
+            /></a>
+            <a href="\images\originals\DSC01117.jpg"
+              ><img src="\images\photos\DSC01117.jpg"
+            /></a>
           </div>
         </div>
       </div>
